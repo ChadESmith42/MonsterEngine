@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MonsterEngine.Models
 {
+    /// <summary>
+    /// Monster characteristics.
+    /// </summary>
     public class Monster : Character
     {
         private int _minDamage;

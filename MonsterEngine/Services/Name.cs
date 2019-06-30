@@ -6,6 +6,10 @@ namespace MonsterEngine
 {
     class Name
     {
+        /// <summary>
+        /// Get Monster Name
+        /// </summary>
+        /// <returns>Generates a random name based on two arrays of strings.</returns>
         public static string GetName()
         {
             Random rand = new Random();

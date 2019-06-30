@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MonsterEngine.Models
 {
+    /// <summary>
+    /// Character class that is common to monsters and players.
+    /// </summary>
     public abstract class Character
     {
         private int _life;

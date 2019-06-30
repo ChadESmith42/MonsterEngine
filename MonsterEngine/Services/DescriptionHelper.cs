@@ -6,6 +6,10 @@ namespace MonsterEngine.Services
 {
     class DescriptionHelper
     {
+        /// <summary>
+        /// Generates a description for the monster.
+        /// </summary>
+        /// <returns>Picks a random description from an array.</returns>
         public static string GenerateDescription()
         {
             Random rand = new Random();
