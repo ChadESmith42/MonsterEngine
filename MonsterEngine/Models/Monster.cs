@@ -38,13 +38,5 @@ namespace MonsterEngine.Models
             HasPowerfulNose = hasPowerfulNose;
         }//end ctor;
 
-
-
-        public override int CalcDamage()
-        {
-            return new Random().Next(MinDamage, MaxDamage + 1);
-        }
-
-
     }//end Monster
 }

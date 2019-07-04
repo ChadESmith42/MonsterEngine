@@ -5,22 +5,13 @@ namespace MonsterEngine.Services
 {
     class MonsterService
     {
-        /// <summary>
-        /// Gets a monster.
-        /// </summary>
-        /// <returns>Creates the first monster in the game.</returns>
-        public static Monster GetMonster()
-        {
-            Monster monster = new Monster(Name.GetName(), 150, 200, 55, 45, 10, 30, "Hairy thing with fangs.", true);
-            return monster;
-        }
 
         /// <summary>
         /// Next monster.
         /// </summary>
         /// <param name="PlayerLevel">Int player level</param>
         /// <returns>Monster based on player's level.</returns>
-        public static Monster NextMonster(int PlayerLevel)
+        public static Monster GetMonster(int PlayerLevel)
         {
             Random rand = new Random();
             int addPoints = rand.Next(10);
@@ -35,9 +26,9 @@ namespace MonsterEngine.Services
             string name = Name.GetName();
             bool hasPowerfulNose = hitChance % 2 > 0 ? true : false;
 
-            Monster nextMonster = new Monster(name, life, maxLife, hitChance, block, minDamage, maxDamage, description, hasPowerfulNose);
+            Monster getMonster = new Monster(name, life, maxLife, hitChance, block, minDamage, maxDamage, description, hasPowerfulNose);
 
-            return nextMonster;
+            return getMonster;
         }
     }
 }
